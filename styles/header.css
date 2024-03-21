@@ -1,12 +1,19 @@
 .header-div {
   display: flex;
   justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.logo {
+  position: absolute;
+  width: 10rem;
+  padding: 1rem 1rem;
 }
 
 .header {
   display: flex;
   border-radius: 4rem;
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0.025);
   width: fit-content;
 }
 
@@ -16,18 +23,9 @@ h2 {
   font-style: normal;
   font-size: 1.2rem;
   margin: 1rem 1.5rem;
-  padding: 0.5rem 0.5rem;
 }
 
 h2:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(86, 94, 136, 0.127),
-    rgb(110, 67, 169),
-    rgba(161, 14, 224, 0.768)
-  );
-  padding: 1rem 1.5rem;
-  margin: 0.5rem 0.5rem;
-  border-radius: 4rem;
+  color: #1b5a7a;
   cursor: pointer;
 }
