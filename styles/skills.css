@@ -1,0 +1,40 @@
+* {
+  font-family: "Noto Sans Khojki", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skills-div {
+  padding: 5% 10%;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.skills-div h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.skills-div h4 {
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list li {
+  display: inline-flex;
+  background-color: #1b5a7a06;
+  margin: 0.2rem 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.3rem #1b5a7a;
+}
+
+.skills-2 {
+  margin-top: 5rem;
+}

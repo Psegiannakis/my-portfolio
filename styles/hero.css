@@ -13,6 +13,10 @@
   padding-top: 5rem;
 }
 
+.hero-main h1 {
+  font-size: 3rem;
+}
+
 .color-text {
   color: #1b5a7a;
   font-weight: 600;
@@ -21,7 +25,7 @@
 .para {
   width: fit-content;
   text-align: center;
-  padding: 0 15%;
+  padding: 3% 15%;
   font-size: larger;
   line-height: 2rem;
 }
