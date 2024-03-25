@@ -29,3 +29,15 @@
   font-size: larger;
   line-height: 2rem;
 }
+
+@media (max-width: 776px) {
+  .hero-main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .hero-main h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -29,3 +29,9 @@ h2:hover {
   color: #1b5a7a;
   cursor: pointer;
 }
+
+@media (max-width: 776px) {
+  .logo {
+    display: none;
+  }
+}

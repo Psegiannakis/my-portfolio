@@ -35,3 +35,9 @@ svg {
 * ::selection {
   background-color: #3b3355cd;
 }
+
+@media (max-width: 510px) {
+  .bi {
+    margin: 0 0.5rem;
+  }
+}
