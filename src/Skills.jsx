@@ -14,8 +14,6 @@ export default function Skills() {
             <li>React.js</li>
             <li>Bootstrap</li>
             <li>UI / UX (User Interface / User Experience)</li>
-            <li>Flexbox</li>
-            <li>Grid</li>
             <li>jQuery</li>
           </ul>
         </div>

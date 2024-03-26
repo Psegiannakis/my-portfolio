@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="footer">
           <p>© 2024 Teri Psegiannakis</p>
           <div className="icons">
-            <a href="">
+            <a href="mailto:psegiannakis1@outlook.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -21,7 +21,7 @@ export default function Contact() {
               </svg>
             </a>
             <span>
-              <a href="">
+              <a href="https://www.linkedin.com/in/teri-psegiannakis-531618290/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"
@@ -35,7 +35,7 @@ export default function Contact() {
               </a>
             </span>
 
-            <a href="">
+            <a href="https://github.com/Psegiannakis">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"

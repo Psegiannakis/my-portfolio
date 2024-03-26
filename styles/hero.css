@@ -15,6 +15,11 @@
 
 .hero-main h1 {
   font-size: 3rem;
+  animation: fade-in 2s linear 0.3s backwards;
+}
+
+.hero-main h3 {
+  animation: fade-in 2s linear 2s backwards;
 }
 
 .color-text {
@@ -28,6 +33,16 @@
   padding: 3% 15%;
   font-size: larger;
   line-height: 2rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 776px) {
