@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   padding: 1rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -13,7 +17,9 @@
 .header {
   display: flex;
   border-radius: 4rem;
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: rgba(255, 255, 255, 0.522);
+  backdrop-filter: blur(0.3rem);
+  border: 0.1rem rgba(0, 0, 0, 0.039) solid;
   width: fit-content;
 }
 
@@ -34,4 +40,12 @@ h2:hover {
   .logo {
     display: none;
   }
+
+  .header h2 {
+    font-size: 1rem;
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 510px) {
 }
