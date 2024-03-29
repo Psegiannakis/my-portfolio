@@ -16,7 +16,7 @@
   padding: 2rem 0;
 }
 
-svg {
+.icons svg {
   color: black;
   width: 1.4rem;
 }
@@ -27,7 +27,7 @@ svg {
   border-radius: 50%;
 }
 
-.bi:hover {
+.icons .bi:hover {
   background-color: #1b5a7a;
   color: white;
 }

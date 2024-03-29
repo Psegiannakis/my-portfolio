@@ -3,7 +3,7 @@ import "../styles/hero.css";
 export default function Hero(props) {
   return (
     <>
-      <main className={props.darkMode ? "dark" : ""}>
+      <body className={props.darkMode ? "dark" : ""}>
         <div className="hero-main">
           <h1>
             Hi. I'm{" "}
@@ -21,7 +21,7 @@ export default function Hero(props) {
             realm.
           </p>
         </div>
-      </main>
+      </body>
     </>
   );
 }

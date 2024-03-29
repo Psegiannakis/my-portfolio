@@ -36,6 +36,34 @@ h2:hover {
   cursor: pointer;
 }
 
+.theme-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 2rem;
+  margin: 1rem 1rem;
+  border: 1px black solid;
+  border-radius: 2rem;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.theme-button:hover,
+.theme-button:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.theme-button svg {
+  width: 2rem;
+  height: 1rem;
+}
+
+.dark body {
+  background-color: black;
+}
+
 @media (max-width: 776px) {
   .logo {
     display: none;
