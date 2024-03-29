@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import "../styles/main.css";
 import { useState } from "react";
 
 function App() {
@@ -15,13 +16,15 @@ function App() {
   };
 
   return (
-    <React.StrictMode>
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-    </React.StrictMode>
+    <body className={darkMode ? "dark" : ""}>
+      <React.StrictMode>
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      </React.StrictMode>
+    </body>
   );
 }
 

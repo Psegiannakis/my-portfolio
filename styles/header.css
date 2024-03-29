@@ -12,6 +12,7 @@
   position: absolute;
   width: 10rem;
   padding: 1rem 1rem;
+  background-color: transparent;
 }
 
 .header {
@@ -21,6 +22,10 @@
   backdrop-filter: blur(0.3rem);
   border: 0.1rem rgba(0, 0, 0, 0.039) solid;
   width: fit-content;
+}
+
+body.dark .header {
+  background-color: #1b5a7a;
 }
 
 h2 {
@@ -37,10 +42,13 @@ h2:hover {
 }
 
 .theme-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
-  width: 4rem;
+  width: 2.5rem;
   height: 2rem;
   margin: 1rem 1rem;
   border: 1px black solid;
@@ -49,19 +57,21 @@ h2:hover {
   transition: transform 0.3s;
 }
 
-.theme-button:hover,
-.theme-button:focus {
+body.dark .theme-button {
+  background-color: black;
+  border: 1px white solid;
+}
+
+.theme-button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 .theme-button svg {
-  width: 2rem;
-  height: 1rem;
-}
-
-.dark body {
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  margin: 0;
 }
 
 @media (max-width: 776px) {

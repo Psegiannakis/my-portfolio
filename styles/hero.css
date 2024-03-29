@@ -35,10 +35,6 @@
   line-height: 2rem;
 }
 
-.dark .para {
-  background-color: black;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
