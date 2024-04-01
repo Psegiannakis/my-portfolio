@@ -7,7 +7,6 @@ body {
   background: var(--color-light);
   transition: 0.3s;
   width: 100%;
-  margin: 0 0;
 }
 
 body.dark {
@@ -16,5 +15,5 @@ body.dark {
 }
 
 body.dark svg {
-  color: white;
+  color: var(--color-light);
 }

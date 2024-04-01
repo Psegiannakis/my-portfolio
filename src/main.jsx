@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { useState } from "react";
 import Header from "./Header";
 import Hero from "./Hero";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import "../styles/main.css";
-import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,10 +19,10 @@ function App() {
     <body className={darkMode ? "dark" : ""}>
       <React.StrictMode>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Projects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Contact darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Hero darkMode={darkMode} />
+        <Skills darkMode={darkMode} />
+        <Projects darkMode={darkMode} />
+        <Contact darkMode={darkMode} />
       </React.StrictMode>
     </body>
   );
