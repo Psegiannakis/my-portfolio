@@ -37,10 +37,50 @@ export default function Header(props) {
         </button>
         <div className="header-div">
           <div className="header">
-            <h2 onClick={() => scroll("hero-main")}>Home</h2>
-            <h2 onClick={() => scroll("skills-div")}>About</h2>
-            <h2 onClick={() => scroll("projects-div")}>Projects</h2>
-            <h2 onClick={() => scroll("contact-footer")}>Contact</h2>
+            <h2
+              onClick={() => scroll("hero-main")}
+              tabIndex="0"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  scroll("hero-main");
+                }
+              }}
+            >
+              Home
+            </h2>
+            <h2
+              onClick={() => scroll("skills-div")}
+              tabIndex="0"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  scroll("skills-div");
+                }
+              }}
+            >
+              About
+            </h2>
+            <h2
+              onClick={() => scroll("projects-div")}
+              tabIndex="0"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  scroll("projects-div");
+                }
+              }}
+            >
+              Projects
+            </h2>
+            <h2
+              onClick={() => scroll("contact-footer")}
+              tabIndex="0"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  scroll("contact-footer");
+                }
+              }}
+            >
+              Contact
+            </h2>
           </div>
         </div>
       </body>
