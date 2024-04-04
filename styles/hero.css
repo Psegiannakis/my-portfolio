@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   line-height: 1rem;
-  padding-top: 5rem;
+  padding: 40vh 0;
 }
 
 .hero-main h1 {
@@ -18,8 +18,19 @@
   animation: fade-in 2s linear 0.3s backwards;
 }
 
-.hero-main h3 {
+.late-fade {
   animation: fade-in 2s linear 2s backwards;
+}
+
+.hero-about {
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+.hero-about h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 2rem;
 }
 
 .color-text {
@@ -30,7 +41,7 @@
 .para {
   width: fit-content;
   text-align: center;
-  padding: 3% 15%;
+
   font-size: larger;
   line-height: 2rem;
 }

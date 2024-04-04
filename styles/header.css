@@ -23,7 +23,7 @@
   width: fit-content;
 }
 
-body.dark .header {
+main.dark .header {
   background-color: #1b5a7a78;
   border: 1px rgba(0, 0, 0, 0.671) solid;
 }
@@ -42,7 +42,7 @@ h2:hover {
   cursor: pointer;
 }
 
-body.dark h2:hover {
+main.dark h2:hover {
   color: rgb(5, 5, 5);
 }
 
@@ -51,20 +51,21 @@ body.dark h2:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 2rem;
   height: 2rem;
   padding: 0;
   margin: 1rem 1rem;
-  border: 1px black solid;
+  border: 1px rgba(0, 0, 0, 0.325) solid;
   border-radius: 2rem;
   z-index: 1;
   background-color: white;
   transition: transform 0.3s;
 }
 
-body.dark .theme-button {
+main.dark .theme-button {
   background-color: #1b5a7a78;
   border: none;
 }
@@ -80,7 +81,7 @@ body.dark .theme-button {
   transition: 1s;
 }
 
-body.dark .theme-button svg {
+main.dark .theme-button svg {
   transform: rotate(1turn);
 }
 
@@ -97,7 +98,7 @@ body.dark .theme-button svg {
 
 @media (max-width: 510px) {
   .theme-button,
-  body.dark .theme-button {
+  main.dark .theme-button {
     border: none;
     background: none;
     color: none;

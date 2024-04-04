@@ -3,17 +3,17 @@
   --color-light: #ffffff;
 }
 
-body {
+main {
   background: var(--color-light);
   transition: 0.3s;
   width: 100%;
 }
 
-body.dark {
+main.dark {
   background: var(--color-dark);
-  color: rgb(227, 217, 217);
+  color: rgba(227, 217, 217, 0.928);
 }
 
-body.dark svg {
+main.dark svg {
   color: var(--color-light);
 }

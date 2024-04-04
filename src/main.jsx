@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <body className={darkMode ? "dark" : ""}>
+    <main className={darkMode ? "dark" : ""}>
       <React.StrictMode>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Hero darkMode={darkMode} />
@@ -24,7 +24,7 @@ function App() {
         <Projects darkMode={darkMode} />
         <Contact darkMode={darkMode} />
       </React.StrictMode>
-    </body>
+    </main>
   );
 }
 

@@ -13,13 +13,23 @@
 .projects-div h3 {
   font-weight: bold;
   font-size: 1.3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.2rem;
+}
+
+.projects-div p {
+  padding-bottom: 4rem;
+  text-decoration: underline;
+  padding-bottom: 5rem;
 }
 
 .projects-grid {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr / 1fr 1fr;
   gap: 0.7rem;
+}
+
+.main-site {
+  grid-column: span 2;
 }
 
 .projects-grid div {

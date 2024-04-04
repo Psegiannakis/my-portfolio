@@ -3,15 +3,19 @@ import "../styles/hero.css";
 export default function Hero(props) {
   return (
     <>
-      <body className={props.darkMode ? "dark" : ""}>
+      <main className={props.darkMode ? "dark" : ""}>
         <div className="hero-main">
           <h1>
-            Hi. I'm{" "}
-            <span className="color-text">Eleftherios Psegiannakis.</span>
+            Hi. I'm
+            <span className="color-text"> Eleftherios Psegiannakis.</span>
           </h1>
-          <h3>
+          <h3 className="late-fade">
             ( Just call me <span className="color-text">Teri...</span> )
           </h3>
+        </div>
+
+        <div className="hero-about">
+          <h3>About</h3>
           <p className="para">
             As an aspiring web developer, I'm passionate about crafting
             captivating digital experiences. With a focus on design and
@@ -21,7 +25,7 @@ export default function Hero(props) {
             realm.
           </p>
         </div>
-      </body>
+      </main>
     </>
   );
 }

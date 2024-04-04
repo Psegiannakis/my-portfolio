@@ -11,7 +11,7 @@ export default function Header(props) {
 
   return (
     <>
-      <body className={props.darkMode ? "dark" : ""}>
+      <main className={props.darkMode ? "dark" : ""}>
         <img
           className="logo"
           src={props.darkMode ? "/logo-dark.png" : "/logo2.png"}
@@ -49,11 +49,11 @@ export default function Header(props) {
               Home
             </h2>
             <h2
-              onClick={() => scroll("skills-div")}
+              onClick={() => scroll("hero-about")}
               tabIndex="0"
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
-                  scroll("skills-div");
+                  scroll("hero-about");
                 }
               }}
             >
@@ -83,7 +83,7 @@ export default function Header(props) {
             </h2>
           </div>
         </div>
-      </body>
+      </main>
     </>
   );
 }
