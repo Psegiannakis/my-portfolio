@@ -11,7 +11,9 @@ export default function Skills(props) {
             <ul>
               <li>HTML</li>
               <li>CSS</li>
+              <li>Tailwind CSS</li>
               <li>JavaScript (JS)</li>
+              <li>TypeScript (TS)</li>
               <li>React.js</li>
               <li>Bootstrap</li>
               <li>UI / UX (User Interface / User Experience)</li>
@@ -22,6 +24,7 @@ export default function Skills(props) {
             <h4>Back-end Development</h4>
             <div className="list two">
               <ul>
+                <li>React Query</li>
                 <li>Node.js</li>
                 <li>PostgreSQL</li>
                 <li>Express.js</li>

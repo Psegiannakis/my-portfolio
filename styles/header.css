@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -60,7 +61,7 @@ main.dark h2:hover {
   margin: 1rem 1rem;
   border: 1px rgba(0, 0, 0, 0.325) solid;
   border-radius: 2rem;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   transition: transform 0.3s;
 }
