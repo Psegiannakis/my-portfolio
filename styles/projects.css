@@ -17,20 +17,23 @@
 .projects-div h3 {
   font-weight: bold;
   font-size: 1.3rem;
-  padding-bottom: 0.2rem;
+  line-height: 1px;
 }
 
 .projects-div p {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   text-decoration: underline;
-  padding-bottom: 5rem;
 }
 
 .projects-grid {
   display: grid;
-  grid-template: 1fr / 1fr 1fr;
+  grid-template: 1fr /1fr 1fr;
   gap: 0.7rem;
   width: 80%;
+}
+
+.main-site {
+  grid-column: span 2;
 }
 
 .grid-div {
@@ -38,23 +41,33 @@
   display: flex;
   justify-content: center;
   z-index: 0;
+  text-decoration: none;
+  color: var(--color-dark);
 }
 
 main.dark .grid-div {
   position: relative;
   display: flex;
   justify-content: center;
-  background: linear-gradient(-45deg, #111010, #3b336b, #0c6181, #091274);
+  background: linear-gradient(-45deg, #111010, #3b336b50, #0c6181, #091274);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  color: rgba(227, 217, 217, 0.928);
+}
+
+.grid-div h1 {
+  position: absolute;
+  top: 1px;
+  font-size: large;
 }
 
 .grid-div p {
   position: absolute;
-  top: 1px;
+  bottom: 1px;
+  text-align: center;
 }
 
-.grid-div a {
+.link {
   position: absolute;
   top: 1px;
   right: 5px;
@@ -62,7 +75,7 @@ main.dark .grid-div {
   padding: 0.3rem 0.3rem;
   transition: transform 0.4s ease-in-out;
 }
-.grid-div a:hover {
+.link:hover {
   transform: scale(1.4);
 }
 
@@ -71,11 +84,7 @@ main.dark .grid-div {
   justify-content: center;
 }
 
-.main-site {
-  grid-column: span 2;
-}
-
-.projects-grid div {
+.grid-div {
   width: 100%;
   height: 20vh;
   background-color: #1b5a7a06;
@@ -85,12 +94,45 @@ main.dark .grid-div {
   transition: box-shadow 0.4s ease-in-out;
 }
 
-.projects-grid div:hover {
-  box-shadow: 0 0 0.7rem #1b5a7a;
+.grid-div:hover {
+  box-shadow: 0 0 3rem #1b5a7a;
 }
 
-.grid-div:hover p {
+main.dark .grid-div:hover {
+  box-shadow: 0 0 2rem #9dddff;
+}
+
+.grid-div:hover h1 {
   text-decoration: underline;
+}
+
+.skills-p {
+  position: absolute;
+  top: 30%;
+}
+
+.skills-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-p li {
+  display: inline-flex;
+  background-color: #1b5a7a06;
+  margin: 0.2rem 0.4rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0.3rem #1b5a7a;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.skills-p li:hover {
+  box-shadow: 0 0 1rem #1b5a7a;
+}
+
+main.dark .skills-p li:hover {
+  box-shadow: 0 0 1rem #9dddff;
 }
 
 @keyframes gradient {
@@ -102,5 +144,60 @@ main.dark .grid-div {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  svg {
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+    path {
+      animation-duration: 2s;
+      animation-name: pulse;
+      animation-iteration-count: infinite;
+      color: #26a380;
+
+      &.path-7 {
+        animation-delay: -1s;
+      }
+      &.path-6 {
+        animation-delay: -0.875s;
+      }
+      &.path-5 {
+        animation-delay: -0.75s;
+      }
+      &.path-4 {
+        animation-delay: -0.625s;
+      }
+      &.path-3 {
+        animation-delay: -0.5s;
+      }
+      &.path-2 {
+        animation-delay: -0.375s;
+      }
+      &.path-1 {
+        animation-delay: -0.25s;
+      }
+      &.path-0 {
+        animation-delay: -0.125s;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.1;
   }
 }

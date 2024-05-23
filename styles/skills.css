@@ -36,6 +36,11 @@
   padding: 0.4rem 0.8rem;
   border-radius: 1rem;
   box-shadow: 0 0 0.3rem #1b5a7a;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.list li:hover {
+  box-shadow: 0 0 0.8rem #1b5a7a;
+  cursor: default;
 }
 
 .skills-2 {
