@@ -100,9 +100,6 @@ main.dark .theme-button svg {
 @media (max-width: 510px) {
   .theme-button,
   main.dark .theme-button {
-    border: none;
-    background: none;
-    color: none;
-    margin: 1px 1px;
+    display: none;
   }
 }

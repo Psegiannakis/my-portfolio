@@ -36,6 +36,15 @@
   grid-column: span 2;
 }
 
+.grid-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: var(--color-dark);
+}
+
 main.dark .grid-div {
   position: relative;
   display: flex;
@@ -217,15 +226,16 @@ main.dark .skills-p li:hover {
     grid-column: span 1;
   }
   .grid-div {
-    height: 20px;
-    font-size: x-small;
+    height: 150px;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
   }
 
   .grid-div h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .grid-div p {
-    margin: 5px 10px;
+    margin: 10px 10px;
   }
 
   .loader {
@@ -233,11 +243,11 @@ main.dark .skills-p li:hover {
   }
 
   .loader svg {
-    height: 3rem;
+    height: 5rem;
   }
 
   .skills-p {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
 
   .skills-p ul {
