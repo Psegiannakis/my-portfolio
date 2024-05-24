@@ -27,22 +27,13 @@
 
 .projects-grid {
   display: grid;
-  grid-template: 1fr /1fr 1fr;
+  grid-template: 1fr / 1fr 1fr;
   gap: 0.7rem;
   width: 80%;
 }
 
 .main-site {
   grid-column: span 2;
-}
-
-.grid-div {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index: 0;
-  text-decoration: none;
-  color: var(--color-dark);
 }
 
 main.dark .grid-div {
@@ -75,6 +66,7 @@ main.dark .grid-div {
   padding: 0.3rem 0.3rem;
   transition: transform 0.4s ease-in-out;
 }
+
 .link:hover {
   transform: scale(1.4);
 }
@@ -108,13 +100,17 @@ main.dark .grid-div:hover {
 
 .skills-p {
   position: absolute;
-  top: 30%;
+  top: 40%;
+  width: 100%;
 }
 
-.skills-p {
+.skills-p ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .skills-p li {
@@ -152,42 +148,51 @@ main.dark .skills-p li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  svg {
-    height: 10rem;
-    display: block;
-    margin: 0 auto;
-    path {
-      animation-duration: 2s;
-      animation-name: pulse;
-      animation-iteration-count: infinite;
-      color: #26a380;
+}
 
-      &.path-7 {
-        animation-delay: -1s;
-      }
-      &.path-6 {
-        animation-delay: -0.875s;
-      }
-      &.path-5 {
-        animation-delay: -0.75s;
-      }
-      &.path-4 {
-        animation-delay: -0.625s;
-      }
-      &.path-3 {
-        animation-delay: -0.5s;
-      }
-      &.path-2 {
-        animation-delay: -0.375s;
-      }
-      &.path-1 {
-        animation-delay: -0.25s;
-      }
-      &.path-0 {
-        animation-delay: -0.125s;
-      }
-    }
-  }
+.loader svg {
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.loader svg path {
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  color: #26a380;
+}
+
+.loader svg path.path-7 {
+  animation-delay: -1s;
+}
+
+.loader svg path.path-6 {
+  animation-delay: -0.875s;
+}
+
+.loader svg path.path-5 {
+  animation-delay: -0.75s;
+}
+
+.loader svg path.path-4 {
+  animation-delay: -0.625s;
+}
+
+.loader svg path.path-3 {
+  animation-delay: -0.5s;
+}
+
+.loader svg path.path-2 {
+  animation-delay: -0.375s;
+}
+
+.loader svg path.path-1 {
+  animation-delay: -0.25s;
+}
+
+.loader svg path.path-0 {
+  animation-delay: -0.125s;
 }
 
 @keyframes pulse {
@@ -199,5 +204,43 @@ main.dark .skills-p li:hover {
   }
   100% {
     opacity: 0.1;
+  }
+}
+
+@media (max-width: 510px) {
+  .projects-grid {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    gap: 0.7rem;
+  }
+  .main-site {
+    grid-column: span 1;
+  }
+  .grid-div {
+    height: 20px;
+    font-size: x-small;
+  }
+
+  .grid-div h1 {
+    font-size: 0.8rem;
+  }
+  .grid-div p {
+    margin: 5px 10px;
+  }
+
+  .loader {
+    top: 40%;
+  }
+
+  .loader svg {
+    height: 3rem;
+  }
+
+  .skills-p {
+    font-size: 0.4rem;
+  }
+
+  .skills-p ul {
+    margin-right: 0.3rem;
   }
 }

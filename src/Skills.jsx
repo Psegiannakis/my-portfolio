@@ -5,8 +5,11 @@ export default function Skills(props) {
     <>
       <main className={props.darkMode ? "dark" : ""}>
         <div className="skills-div">
-          <h3>Skill set</h3>
-          <h4>Front-end Development</h4>
+          <span className="skills-header">
+            <h3>Skill set</h3>
+            <h4>Front-end Development</h4>
+          </span>
+
           <div className="list">
             <ul>
               <li>HTML</li>

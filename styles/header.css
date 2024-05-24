@@ -103,5 +103,6 @@ main.dark .theme-button svg {
     border: none;
     background: none;
     color: none;
+    margin: 1px 1px;
   }
 }

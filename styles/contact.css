@@ -41,4 +41,8 @@
   .bi {
     margin: 0 0.5rem;
   }
+
+  .footer p {
+    font-size: small;
+  }
 }
